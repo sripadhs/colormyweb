@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colormyweb</title>
+    <link rel="icon" type="image/x-icon" href="favicon copy.ico">
+</head>
+<body>
+    <!-- Place this tag where you want the button to render. -->
+    <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Colormyweb</h1>
+<a class="github-button" href="https://github.com/sripadhs/colormyweb" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" aria-label="Star sripadhs/colormyweb on GitHub">Star</a>
+    <div id="screen" style="background: red; width: 500px; height: 300px;">
+        <h1 id="txt" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hello,this is a dummy text</h1>
+        <button id="btn" style="width: 100px;height: 30px; border: none; border-radius: 99pt;">Hello</button>
+        
+    </div>
+    <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Background</h3>
+    <button style="width:100px; height: 50px;  background-color:red; border:none; border-radius:10pt; " onclick="color('red')"></button>
+    <button style="width:100px; height: 50px;  background-color:yellow; border:none; border-radius:10pt; " onclick="color('yellow')"></button>
+    <button style="width:100px; height: 50px;  background-color:blue; border:none; border-radius:10pt; " onclick="color('blue')"></button>
+    <button style="width:100px; height: 50px;  background-color:green; border:none; border-radius:10pt; " onclick="color('green')"></button>
+    <button style="width:100px; height: 50px;  background-color:orange; border:none; border-radius:10pt; " onclick="color('orange')"></button>
+    <button style="width:100px; height: 50px;  background-color:violet; border:none; border-radius:10pt; " onclick="color('violet')"></button>
+    <button style="width:100px; height: 50px;  background-color:black; border:none; border-radius:10pt; " onclick="color('black')"></button>
+    <input id="hex1" type="color" placeholder="Hex code">
+    <button style="color: black; background-color: white;border-radius: 50pt;" onclick="hexcolor()">Enter</button>
+
+
+    <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Text</h3>
+    <button style="width:100px; height: 50px;  background-color:red; border:none; border-radius:10pt; " onclick="txtcolor('red')"></button>
+    <button style="width:100px; height: 50px;  background-color:yellow; border:none; border-radius:10pt; " onclick="txtcolor('yellow')"></button>
+    <button style="width:100px; height: 50px;  background-color:blue; border:none; border-radius:10pt; " onclick="txtcolor('blue')"></button>
+    <button style="width:100px; height: 50px;  background-color:green; border:none; border-radius:10pt; " onclick="txtcolor('green')"></button>
+    <button style="width:100px; height: 50px;  background-color:orange; border:none; border-radius:10pt; " onclick="txtcolor('orange')"></button>
+    <button style="width:100px; height: 50px;  background-color:violet; border:none; border-radius:10pt; " onclick="txtcolor('violet')"></button>
+    <button style="width:100px; height: 50px;  background-color:black; border:none; border-radius:10pt; " onclick="txtcolor('black')"></button>
+    <input id="hex2" type="color" placeholder="Hex code">
+    <button style="color: black; background-color: white;border-radius: 50pt;" onclick="hexcolor2()">Enter</button>
+
+    <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Button</h3>
+    <button style="width:100px; height: 50px;  background-color:red; border:none; border-radius:10pt; " onclick="btncolor('red')"></button>
+    <button style="width:100px; height: 50px;  background-color:yellow; border:none; border-radius:10pt; " onclick="btncolor('yellow')"></button>
+    <button style="width:100px; height: 50px;  background-color:blue; border:none; border-radius:10pt; " onclick="btncolor('blue')"></button>
+    <button style="width:100px; height: 50px;  background-color:green; border:none; border-radius:10pt; " onclick="btncolor('green')"></button>
+    <button style="width:100px; height: 50px;  background-color:orange; border:none; border-radius:10pt; " onclick="btncolor('orange')"></button>
+    <button style="width:100px; height: 50px;  background-color:violet; border:none; border-radius:10pt; " onclick="btncolor('violet')"></button>
+    <button style="width:100px; height: 50px;  background-color:black; border:none; border-radius:10pt; " onclick="btncolor('black')"></button>
+    <input id="hex3" type="color"  placeholder="Hex code">
+    <button style="color: black; background-color: white;border-radius: 50pt;" onclick="hexcolor3()">Enter</button>
+
+
+    <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Button text color</h3>
+    <button style="width:100px; height: 50px;  background-color:red; border:none; border-radius:10pt; " onclick="btntxtcolor('red')"></button>
+    <button style="width:100px; height: 50px;  background-color:yellow; border:none; border-radius:10pt; " onclick="btntxtcolor('yellow')"></button>
+    <button style="width:100px; height: 50px;  background-color:blue; border:none; border-radius:10pt; " onclick="btntxtcolor('blue')"></button>
+    <button style="width:100px; height: 50px;  background-color:green; border:none; border-radius:10pt; " onclick="btntxtcolor('green')"></button>
+    <button style="width:100px; height: 50px;  background-color:orange; border:none; border-radius:10pt; " onclick="btntxtcolor('orange')"></button>
+    <button style="width:100px; height: 50px;  background-color:violet; border:none; border-radius:10pt; " onclick="btntxtcolor('violet')"></button>
+    <button style="width:100px; height: 50px;  background-color:black; border:none; border-radius:10pt; " onclick="btntxtcolor('black')"></button>
+    <input id="hex4" type="color" placeholder="Hex code">
+    <button style="color: black; background-color: white;border-radius: 50pt;" onclick="hexcolor4()">Enter</button>
+
+   
+    <script>
+
+        function color(col) {
+            document.getElementById("screen").style.background=col
+            
+        }
+        function txtcolor(col) {
+            document.getElementById("txt").style.color=col
+            
+        }
+        function btncolor(col) {
+            document.getElementById("btn").style.background=col
+            
+        }
+        function btntxtcolor(col) {
+            document.getElementById("btn").style.color=col
+            
+        }
+        function hexcolor(){
+            var i=document.getElementById("hex1").value
+            document.getElementById("screen").style.background=i
+        }
+        function hexcolor2(){
+            var i=document.getElementById("hex2").value
+            document.getElementById("txt").style.color=i
+        }
+        function hexcolor3(){
+            var i=document.getElementById("hex3").value
+            document.getElementById("btn").style.background=i
+        }
+        function hexcolor4(){
+            var i=document.getElementById("hex4").value
+            document.getElementById("btn").style.color=i
+        }
+  
+    </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
